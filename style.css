@@ -1,0 +1,130 @@
+
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.container {
+  background-image: url(./images/bg-intro-desktop.png);
+  background-color: palevioletred;
+  height: 100vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+h3 {
+  font-size: 60px;
+}
+.part-1 {
+  width: 30%;
+  margin-right: 250px;
+}
+.part-1 p {
+  padding-top: 30px;
+  font-size: 20px;
+}
+.card {
+  background-color: #fff;
+  color: #333;
+  border-radius: 6px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+  padding: 10px;
+}
+.demo {
+  width: 110%;
+  font-size: 23px;
+  background-color: rgb(98, 77, 145);
+  color: #fff;
+  text-align: center;
+}
+.demo p {
+  font-weight: 800;
+}
+.input-field {
+  margin: 25px 0;
+  width: 110%;
+}
+
+.fields {
+  display: flex;
+  flex-direction: column;
+  margin: 20px 20px;
+}
+
+.text-field {
+  padding: 15px 20px;
+  margin: 12px 0;
+  outline: none;
+  border-radius: 5px;
+  border-width: 1px;
+  border-style: solid;
+}
+.click {
+  padding: 15px 5px;
+  margin: 20px 0;
+  border: 0;
+  outline: none;
+  background-color: rgb(86, 167, 86);
+  border-radius: 10px;
+  box-shadow: 0 8px 10px rgba(0, 0, 0, 0.1);
+  color: #fff;
+  font-size: 18px;
+  font-weight: 700;
+  cursor: pointer;
+}
+.click:hover {
+  transform: scale(0.97);
+}
+.input-field p {
+  font-size: 13px;
+  margin-top: -15px;
+}
+.terms {
+  color: rgb(223, 122, 86);
+  font-weight: 800;
+  cursor: pointer;
+}
+.error {
+  height: 10px;
+  margin-top: 5px;
+  text-align: end;
+  color: red;
+  font-family: 'PT Sans', sans-serif;
+  font-weight: 600;
+  visibility: hidden;
+}
+
+.error i{
+  position: relative;
+  right:10px;
+  top: -50px;
+}
+
+/* Mobile Screen */
+@media(max-width:1000px){
+
+  .container{
+  flex-direction: column;
+  height: auto;
+  }
+  .part-1 {
+    margin-top: 80px;
+    width: 60%;
+    margin-left: 300px;
+    margin-bottom: 80px;
+  }
+  .card{
+    width: auto;
+  }
+}
+
+/* FOOTER */
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
